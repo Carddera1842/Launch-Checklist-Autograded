@@ -8,8 +8,7 @@ window.addEventListener("load", function() {
     }).then(function () {
         console.log(listedPlanets);
         let planet = pickPlanet(listedPlanets);
-        addDestinationInfo(document, planet.name, planet.diameter, planet.star, planet.distance, planet.moons, planet.image);
-        
+        addDestinationInfo(document, planet.name, planet.diameter, planet.star, planet.distance, planet.moons, planet.image);    
     })
 
     window.addEventListener("submit", function (event) {
@@ -20,8 +19,6 @@ window.addEventListener("load", function() {
         let cargoLevel = document.querySelector("input[name=cargoMass]");
         let list = document.getElementById("faultyItems");
         formSubmission(document, list, pilot.value, copilot.value, fuelLevel.value, cargoLevel.value);
-
-
     })
-    
+ 
  });
